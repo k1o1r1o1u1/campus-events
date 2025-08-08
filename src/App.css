@@ -1,0 +1,39 @@
+/* Center container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Global button styles */
+button {
+  background-color: #8b8988;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #E25728;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Links styled like buttons */
+a button {
+  text-decoration: none;
+}
+
+/* Responsive text alignment */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}

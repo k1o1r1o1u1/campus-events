@@ -1,0 +1,88 @@
+/* Container */
+.event-feed-container {
+  margin-top: 10px;
+}
+
+/* Title */
+.page-title {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Filter row */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap; /* desktop: wrap to new line */
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* Filter buttons (pill style) */
+.filter-btn {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 2px solid #FF6430;
+  background: white;
+  color: #FF6430;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.08s ease;
+}
+
+.filter-btn:hover {
+  background: #FF6430;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  background: #FF6430;
+  color: #fff;
+  border-color: #FF6430;
+}
+
+/* Event list grid */
+.event-list {
+  display: grid;
+  gap: 12px;
+}
+
+/* Event card */
+.card {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+/* View/Register button */
+.action-btn {
+  background: #FF6430;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.action-btn:hover {
+  background: #E25728;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .filter-row {
+    flex-wrap: nowrap; /* keep in single row */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .filter-row::-webkit-scrollbar {
+    display: none;
+  }
+}
